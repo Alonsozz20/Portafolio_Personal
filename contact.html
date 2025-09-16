@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Mi Portafolio</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="about.html" class="nav-link">Acerca de</a></li>
+                <li><a href="projects.html" class="nav-link">Proyectos</a></li>
+                <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Contacto</h1>
+                <p class="page-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Ponte en Contacto</h2>
+                        <p>
+                            Estoy siempre abierto a discutir nuevos proyectos, oportunidades creativas 
+                            o simplemente para charlar sobre tecnología. No dudes en escribirme.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>alonsojjj90@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-text">
+                                    <h4>Teléfono</h4>
+                                    <p>+51 901054438</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h4>Ubicación</h4>
+                                    <p>Talara, Perú</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">⏰</div>
+                                <div class="contact-text">
+                                    <h4>Disponibilidad</h4>
+                                    <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <h3>Sígueme en</h3>
+                            <div class="social-icons">
+                                <a href="https://www.instagram.com/alonso_z09/" class="social-icon instagram">
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="https://github.com/Alonsozz20" class="social-icon github">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://x.com/AlonsoZav20" class="social-icon twitter">
+                                    <span>Twitter</span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <h3>Envíame un Mensaje</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Asunto *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Presupuesto (Opcional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Selecciona un rango</option>
+                                    <option value="under-1k">Menos de $1,000</option>
+                                    <option value="1k-5k">$1,000 - $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-plus">Más de $10,000</option>
+                                    <option value="discuss">Prefiero discutirlo</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mensaje *</label>
+                                <textarea id="message" name="message" rows="6" required 
+                                    placeholder="Cuéntame sobre tu proyecto, ideas o cualquier pregunta que tengas..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Suscribirme a tu newsletter para recibir actualizaciones
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span class="btn-text">Enviar Mensaje</span>
+                                <span class="btn-loading" style="display: none;">Enviando...</span>
+                            </button>
+                        </form>
+
+                        <!-- Success/Error Messages -->
+                        <div class="form-message success" id="success-message" style="display: none;">
+                            <h4>¡Mensaje Enviado!</h4>
+                            <p>Gracias por contactarme. Te responderé lo antes posible.</p>
+                        </div>
+
+                        <div class="form-message error" id="error-message" style="display: none;">
+                            <h4>Error al Enviar</h4>
+                            <p>Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cuánto tiempo toma desarrollar un proyecto?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El tiempo depende del alcance del proyecto. Un sitio web simple puede tomar 2-4 semanas, 
+                            mientras que una aplicación compleja puede requerir 2-6 meses. Siempre proporciono estimaciones 
+                            detalladas después de la consulta inicial.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Trabajas con clientes internacionales?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Trabajo con clientes de todo el mundo. Utilizo herramientas de comunicación 
+                            modernas y me adapto a diferentes zonas horarias para asegurar una colaboración fluida.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Ofreces soporte post-lanzamiento?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrezco diferentes paquetes de soporte que incluyen corrección de bugs, actualizaciones 
+                            de contenido, mantenimiento técnico y mejoras continuas según tus necesidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>¿Cuál es tu proceso de trabajo?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Mi proceso incluye: 1) Consulta inicial y análisis de requisitos, 2) Propuesta y planificación, 
+                            3) Diseño y prototipado, 4) Desarrollo y testing, 5) Revisiones y feedback, 6) Lanzamiento y soporte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Portafolio</h3>
+                    <p>Desarrollador Full Stack apasionado por crear soluciones innovadoras</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/alonso_z09/" class="social-link">Instagram</a>
+                        <a href="https://github.com/Alonsozz20" class="social-link">GitHub</a>
+                        <a href="https://x.com/AlonsoZav20" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

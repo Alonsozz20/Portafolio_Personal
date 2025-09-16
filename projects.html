@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Proyectos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Mi Portafolio</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="about.html" class="nav-link">Acerca de</a></li>
+                <li><a href="projects.html" class="nav-link active">Proyectos</a></li>
+                <li><a href="contact.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Projects Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Mis Proyectos</h1>
+                <p class="page-subtitle">Una muestra de mi trabajo y experiencia</p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Móvil</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <div class="project-card-detailed" data-category="web frontend">
+                        <div class="project-image">
+                            <img src="img/proyecto1.jpg" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Plataforma completa de comercio electrónico con carrito de compras, sistema de pagos y panel de administración.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Stripe</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2024</span>
+                                <span class="project-status completed">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card-detailed" data-category="web backend">
+                        <div class="project-image">
+                            <img src="img/proyecto2.jpg" alt="Analytics Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Dashboard de análisis de datos en tiempo real con visualizaciones interactivas y reportes automatizados.</p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2024</span>
+                                <span class="project-status completed">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project-card-detailed" data-category="mobile">
+                        <div class="project-image">
+                            <img src="img/proyecto3.jpg" alt="Task Manager App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Manager App</h3>
+                            <p>Aplicación móvil para gestión de tareas con sincronización en la nube y notificaciones push.</p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Firebase</span>
+                                <span>Redux</span>
+                                <span>Expo</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2023</span>
+                                <span class="project-status completed">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="project-card-detailed" data-category="backend">
+                        <div class="project-image">
+                            <img src="img/proyecto4.jpg" alt="API REST">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Documentación</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>REST API System</h3>
+                            <p>Sistema de API REST escalable con autenticación JWT, rate limiting y documentación completa.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2023</span>
+                                <span class="project-status completed">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="project-card-detailed" data-category="frontend web">
+                        <div class="project-image">
+                            <img src="img/proyecto5.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Sitio web de portafolio personal responsive con animaciones CSS y optimización SEO.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>GSAP</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2023</span>
+                                <span class="project-status completed">Completado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 6 -->
+                    <div class="project-card-detailed" data-category="web">
+                        <div class="project-image">
+                            <img src="img/proyecto6.jpg" alt="Social Media App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Ver Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Social Media Platform</h3>
+                            <p>Plataforma de redes sociales con chat en tiempo real, sistema de posts y notificaciones.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Socket.io</span>
+                                <span>MongoDB</span>
+                                <span>Cloudinary</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="project-date">2024</span>
+                                <span class="project-status in-progress">En Progreso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Tienes un proyecto en mente?</h2>
+                    <p>Trabajemos juntos para convertir tu idea en realidad</p>
+                    <a href="contact.html" class="btn btn-primary">Contáctame</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mi Portafolio</h3>
+                    <p>Desarrollador Full Stack apasionado por crear soluciones innovadoras</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>="index.html">Inicio</a></li>
+                        <li><a href
